@@ -20,7 +20,7 @@ results_path = r'/home/qiaog/pose-est/oriented_features/python/oriented_features
 eval_path = r'/home/qiaog/pose-est/oriented_features/python/oriented_features/pose_scoring_lightning/test_logs/bop_results'
 
 '''
-./init_cpp_image.sh
+./init_cpp_image_shell.sh
 cd bop_toolkit
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/qiaog/pose-est/bop_renderer/osmesa-install/build/llvm-4.0.1.src/build/lib/
 PYTHONPATH="./" python scripts/eval_bop19.py --renderer_type=cpp --result_filenames=ppf/opencv-ppf-icp_ycbv-test.csv

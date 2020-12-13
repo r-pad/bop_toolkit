@@ -132,8 +132,11 @@ def load_cam_params(path):
                    [0.0, 0.0, 1.0]])
   }
 
+  cam.update(c)
+
   if 'depth_scale' in c.keys():
     cam['depth_scale'] = float(c['depth_scale'])
+
 
   return cam
 

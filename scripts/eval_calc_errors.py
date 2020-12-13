@@ -140,7 +140,8 @@ for result_filename in p['result_filenames']:
   time_start = time.time()
 
   # Parse info about the method and the dataset from the filename.
-  result_name = os.path.splitext(os.path.basename(result_filename))[0]
+  # result_name = os.path.splitext(os.path.basename(result_filename))[0]
+  result_name = os.path.splitext(os.path.basename(result_filename))[0] + "_" + p['targets_filename'].split(".")[0]
   result_info = result_name.split('_')
   method = str(result_info[0])
   dataset_info = result_info[1].split('-')
